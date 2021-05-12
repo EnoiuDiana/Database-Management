@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="order.management.Presentation.Controller.ItemsFXMLController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Items Table" />
+      <Button layoutX="508.0" layoutY="353.0" mnemonicParsing="false" onAction="#backButtonPushed" text="Back" />
+      <TableView fx:id="tableViewItem" layoutX="14.0" layoutY="35.0" prefHeight="158.0" prefWidth="568.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" onEditCommit="#changeNameCellEvent" prefWidth="226.0" text="Product name" />
+          <TableColumn fx:id="priceColumn" onEditCommit="#changePriceCellEvent" prefWidth="152.0" text="Price" />
+            <TableColumn fx:id="quantityColumn" onEditCommit="#changeQuantityCellEvent" prefWidth="164.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <HBox layoutX="14.0" layoutY="200.0" prefHeight="48.0" prefWidth="568.0">
+         <children>
+            <TextField fx:id="nameTextField" prefHeight="37.0" prefWidth="225.0" />
+            <TextField fx:id="priceTextField" prefHeight="37.0" prefWidth="164.0" />
+            <TextField fx:id="quantityTextField" prefHeight="37.0" prefWidth="178.0" />
+         </children>
+      </HBox>
+      <Button layoutX="14.0" layoutY="248.0" mnemonicParsing="false" onAction="#newItemButtonPushed" text="Add new item" />
+      <Button layoutX="14.0" layoutY="288.0" mnemonicParsing="false" onAction="#deleteItemsButtonPushed" text="Delete items" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="order.management.Presentation.Controller.HomeFXMLController">
+   <children>
+      <VBox layoutX="77.0" prefHeight="400.0" prefWidth="448.0">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Label text="Order Management App">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="149.0" prefWidth="390.0">
+               <children>
+                  <Button fx:id="customers" mnemonicParsing="false" onAction="#buttonPushed" text="Customers" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="items" mnemonicParsing="false" onAction="#buttonPushed" text="Items" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="placeOrder" mnemonicParsing="false" onAction="#buttonPushed" text="Place order" />
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

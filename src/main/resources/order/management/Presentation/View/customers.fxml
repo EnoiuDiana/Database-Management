@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="order.management.Presentation.Controller.CustomersFXMLController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Customers Table">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="608.0" layoutY="353.0" mnemonicParsing="false" onAction="#backButtonPushed" text="Back" />
+      <TableView fx:id="tableViewCustomer" layoutX="12.0" layoutY="35.0" prefHeight="144.0" prefWidth="677.0">
+        <columns>
+          <TableColumn fx:id="firstNameColumn" onEditCommit="#changeFirstNameCellEvent" prefWidth="143.0" text="First Name" />
+          <TableColumn fx:id="lastNameColumn" minWidth="4.0" onEditCommit="#changeLastNameCellEvent" prefWidth="139.0" text="Last Name" />
+            <TableColumn fx:id="emailColumn" minWidth="0.0" onEditCommit="#changeEmailCellEvent" prefWidth="143.0" text="Email" />
+            <TableColumn fx:id="phoneColumn" onEditCommit="#changePhoneCellEvent" prefWidth="102.0" text="Phone" />
+            <TableColumn fx:id="addressColumn" onEditCommit="#changeAddressCellEvent" prefWidth="122.0" text="Address" />
+        </columns>
+      </TableView>
+      <HBox layoutX="12.0" layoutY="185.0" prefHeight="48.0" prefWidth="677.0">
+         <children>
+            <TextField fx:id="firstNameTextField" prefHeight="37.0" prefWidth="139.0" />
+            <TextField fx:id="lastNameTextField" prefHeight="37.0" prefWidth="141.0" />
+            <TextField fx:id="emailTextField" prefHeight="37.0" prefWidth="139.0" />
+            <TextField fx:id="phoneTextField" prefHeight="37.0" prefWidth="111.0" />
+            <TextField fx:id="addressTextField" prefHeight="37.0" prefWidth="147.0" />
+         </children>
+      </HBox>
+      <Button layoutX="10.0" layoutY="233.0" mnemonicParsing="false" onAction="#newCustomerButtonPushed" text="Add new customer" />
+      <Button layoutX="10.0" layoutY="277.0" mnemonicParsing="false" onAction="#deleteCustomersButtonPushed" prefHeight="33.0" prefWidth="170.0" text="Delete customers" />
+   </children>
+</AnchorPane>

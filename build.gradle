@@ -19,6 +19,9 @@ dependencies {
     compile group: 'com.google.guava',
             name: 'guava',
             version: '18.0'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.21'
+    runtime "mysql:mysql-connector-java:8.0.21"
+    implementation group: 'com.itextpdf', name: 'itextpdf', version: '5.0.6'
 }
 
 test {
