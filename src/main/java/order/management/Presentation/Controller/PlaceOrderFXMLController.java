@@ -132,6 +132,13 @@ public class PlaceOrderFXMLController implements Initializable {
         return placedOrder;
     }
 
+    /**
+     * This method will generate a bill in a pdf format
+     * @param placedOrder the order that was placed
+     * @throws FileNotFoundException
+     * @throws DocumentException
+     */
+
     public void generateBillPdf(PlacedOrder placedOrder) throws FileNotFoundException, DocumentException {
         CustomerBll customerBll = new CustomerBll();
         ItemBll itemBll = new ItemBll();

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="816.1041666666665" y="832.0">order.management.Presentation.Controller.ItemsFXMLController</node>
+    <node x="844.8863636363635" y="516.0">order.management.Dao.ItemDao</node>
+    <node x="485.14583333333326" y="0.0">order.management.Connection.ConnectionFactory</node>
+    <node x="155.10984848484827" y="596.0">order.management.Bll.CustomerBll</node>
+    <node x="0.0" y="810.0">order.management.Presentation.Controller.CustomersFXMLController</node>
+    <node x="415.6458333333332" y="843.0">order.management.Presentation.Controller.PlaceOrderFXMLController</node>
+    <node x="483.14583333333326" y="192.0">order.management.Dao.AbstractDAO</node>
+    <node x="204.6212121212119" y="516.0">order.management.Dao.CustomerDao</node>
+    <node x="513.1458333333333" y="516.0">order.management.Dao.PlacedOrderDao</node>
+    <node x="447.14583333333326" y="607.0">order.management.Bll.PlacedOrderBll</node>
+    <node x="791.4602272727273" y="607.0">order.management.Bll.ItemBll</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="order.management.Bll.CustomerBll" target="order.management.Dao.CustomerDao">
+      <point x="-63.25" y="-82.0" />
+      <point x="218.35984848484827" y="571.0" />
+      <point x="238.6212121212119" y="571.0" />
+      <point x="-34.0" y="15.0" />
+    </edge>
+    <edge source="order.management.Dao.PlacedOrderDao" target="order.management.Dao.AbstractDAO">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="137.0" />
+    </edge>
+    <edge source="order.management.Presentation.Controller.PlaceOrderFXMLController" target="order.management.Bll.CustomerBll">
+      <point x="-147.91666666666657" y="-93.0" />
+      <point x="445.22916666666663" y="790.0" />
+      <point x="313.23484848484827" y="790.0" />
+      <point x="31.625" y="82.0" />
+    </edge>
+    <edge source="order.management.Presentation.Controller.CustomersFXMLController" target="order.management.Bll.CustomerBll">
+      <point x="-88.75000000000011" y="-126.0" />
+      <point x="88.74999999999989" y="790.0" />
+      <point x="186.73484848484827" y="790.0" />
+      <point x="-94.875" y="82.0" />
+    </edge>
+    <edge source="order.management.Dao.AbstractDAO" target="order.management.Connection.ConnectionFactory">
+      <point x="0.0" y="-137.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="order.management.Dao.CustomerDao" target="order.management.Dao.AbstractDAO">
+      <point x="0.0" y="-15.0" />
+      <point x="272.6212121212119" y="491.0" />
+      <point x="519.8124999999999" y="491.0" />
+      <point x="-73.33333333333331" y="137.0" />
+    </edge>
+    <edge source="order.management.Presentation.Controller.PlaceOrderFXMLController" target="order.management.Bll.ItemBll">
+      <point x="88.75" y="-93.0" />
+      <point x="681.8958333333333" y="780.0" />
+      <point x="814.2102272727273" y="780.0" />
+      <point x="-68.25" y="71.0" />
+    </edge>
+    <edge source="order.management.Presentation.Controller.PlaceOrderFXMLController" target="order.management.Bll.PlacedOrderBll">
+      <point x="-29.583333333333314" y="-93.0" />
+      <point x="563.5624999999999" y="790.0" />
+      <point x="520.1458333333333" y="790.0" />
+      <point x="-73.0" y="71.0" />
+    </edge>
+    <edge source="order.management.Bll.ItemBll" target="order.management.Dao.ItemDao">
+      <point x="-45.5" y="-71.0" />
+      <point x="836.9602272727273" y="571.0" />
+      <point x="870.8863636363635" y="571.0" />
+      <point x="-26.0" y="15.0" />
+    </edge>
+    <edge source="order.management.Dao.ItemDao" target="order.management.Dao.AbstractDAO">
+      <point x="0.0" y="-15.0" />
+      <point x="896.8863636363635" y="491.0" />
+      <point x="666.4791666666665" y="491.0" />
+      <point x="73.33333333333326" y="137.0" />
+    </edge>
+    <edge source="order.management.Presentation.Controller.ItemsFXMLController" target="order.management.Bll.ItemBll">
+      <point x="74.75" y="-104.0" />
+      <point x="1040.3541666666665" y="790.0" />
+      <point x="950.7102272727273" y="790.0" />
+      <point x="68.25" y="71.0" />
+    </edge>
+    <edge source="order.management.Bll.PlacedOrderBll" target="order.management.Dao.PlacedOrderDao">
+      <point x="-73.0" y="-71.0" />
+      <point x="520.1458333333333" y="571.0" />
+      <point x="553.1458333333333" y="571.0" />
+      <point x="-40.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7273567467652495" x="558.0" y="531.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

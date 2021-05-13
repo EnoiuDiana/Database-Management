@@ -29,9 +29,9 @@ public class AbstractDAO<T> {
     /**
      * Method that uses reflection techniques to create the objects received from the result set
      * @param resultSet
-     * @deprecated
      * @return
      */
+    @Deprecated
     private List<T> createObjects(ResultSet resultSet) {
         List<T> list = new ArrayList<T>();
 
